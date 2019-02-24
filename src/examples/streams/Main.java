@@ -24,11 +24,11 @@ public class Main {
 
         List<Team> teamList = Arrays.asList(realMadridCF, barcelonaFC, fcBayernMunich);
 
-        List<Integer> yearsWithchampionsFromGermany = getChampionsYearByCountry(teamList, Country.GERMANY);
-        yearsWithchampionsFromGermany.forEach(System.out::println);
+        List<Integer> yearsWithGermanChampion = getChampionsYearByCountry(teamList, Country.GERMANY);
+        yearsWithGermanChampion.forEach(System.out::println);
 
-        List<Integer> yearsWithchampionsFromSpain = getChampionsYearByCountry(teamList, Country.SPAIN);
-        yearsWithchampionsFromSpain.forEach(System.out::println);
+        List<Integer> yearsWithSpainChampion = getChampionsYearByCountry(teamList, Country.SPAIN);
+        yearsWithSpainChampion.forEach(System.out::println);
 
         Team mostTimesChampion = teamList.stream().max(Comparator.comparingInt(item->item.getClubWorldCupList().size())).get();
         System.out.println(mostTimesChampion.getName());

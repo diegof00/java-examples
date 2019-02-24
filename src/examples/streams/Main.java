@@ -44,7 +44,7 @@ public class Main {
                 .map(cup -> cup.getYear()).collect(Collectors.toList());
     }
 
-    private static List<ClubWorldCup> getClubWorldCups(List<Integer> yearsRealMadrid) {
-        return yearsRealMadrid.stream().map(year -> new ClubWorldCup(year)).collect(Collectors.toList());
+    private static List<ClubWorldCup> getClubWorldCups(List<Integer> years) {
+        return years.stream().map(year -> new ClubWorldCup(year)).collect(Collectors.toList());
     }
 }

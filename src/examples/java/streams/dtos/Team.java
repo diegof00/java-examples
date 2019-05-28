@@ -1,4 +1,4 @@
-package examples.streams.dtos;
+package streams.dtos;
 
 import java.util.List;
 

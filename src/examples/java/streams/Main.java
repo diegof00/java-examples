@@ -1,10 +1,9 @@
-package examples.streams;
+package streams;
 
-import examples.streams.dtos.Country;
-import examples.streams.dtos.ClubWorldCup;
-import examples.streams.dtos.Team;
+import streams.dtos.Country;
+import streams.dtos.ClubWorldCup;
+import streams.dtos.Team;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
